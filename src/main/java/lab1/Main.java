@@ -14,7 +14,7 @@ public class Main {
         int age;
         System.out.print("What is your name? "); // user to enter their name
         name = input.nextLine(); // Read the entire line of input and store it in the name variable
-        System.out.print("How old are you? "); // user to enter their age
+        System.out.print("How old are you ? "); // user to enter their age
         age = Integer.parseInt(input.nextLine()); // Read the age from the input, convert it from a string to an integer, and store it in the age variable
         if (age >= 18) { // Check if the age is greater than or equal to 18
             System.out.println("You are an adult."); // Print this message if the condition is true
