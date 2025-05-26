@@ -1,0 +1,14 @@
+This Java program is a simple but practical tool that collects some basic information from the user—like their name, age, and a couple of numbers—performs a bit of number processing, and then saves everything into a file called output.txt. It starts by asking the user for their name and age. Once the age is entered, it checks whether the person is an adult or a minor and displays a message accordingly.
+After that, the program asks the user to enter two numbers, twice: once to store them in a dynamic list (ArrayList) and once in a regular array (int[]). For each number entered, it calculates the double using a helper method and shows the result on the screen.
+Finally, all the collected data—name, age, numbers from both the list and the array—are written to a file. This part uses a FileWriter inside a try-catch block, which helps handle any file-related errors (like if the file can't be created or written to). The program also closes the scanner properly at the end to avoid any memory issues.
+what the code does:
+Takes input from the user for name, age, and numbers.
+Checks age to decide if the user is a minor or an adult.
+Stores numbers in both a list and an array.
+Doubles the numbers using a reusable function.
+Saves everything to a file in a nicely formatted way.
+Some challenges i faced during tha lab
+Mixing nextLine() with number inputs can sometimes skip lines—this was solved by using nextLine() consistently and converting inputs to numbers manually.
+Writing to a file might fail due to permissions or file access issues, but wrapping it in a try-catch made it more reliable.
+Properly closing the Scanner and FileWriter was important to avoid resource leaks, and was handled in a finally block.
+overall,this program is a solid example of using Java for real-world tasks like interacting with users, working with different data structures, and saving results to a file—all while handling possible errors gracefully. Let me know if you'd like this saved in a document or markdown file.
