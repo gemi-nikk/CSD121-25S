@@ -1,0 +1,13 @@
+ Features of avatargenerator:
+ Randomly selects an avatar style and seed
+ Fetches the avatar as a PNG image stream from an external API
+ Displays the image using a simple GUI frame
+
+ What’s Included:
+ Fully commented `AvatarGenerator.java` with line-by-line comments
+ Analyzed all class methods, variables, packages, and object types
+ Identified reference vs primitive types
+ Implemented and documented `showAvatar()` with clear argument type distinctions
+
+ AI Tool Usage Statement:
+ I di d not use any AI
