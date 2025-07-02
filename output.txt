@@ -1,0 +1,4 @@
+Name: kp
+Age: 23
+List numbers: [12, 21]
+Array numbers: 32 23 
