@@ -1,8 +1,8 @@
 package lab4.ui;
-
 import lab4.game.*;
-
 import java.util.Scanner;
+import static com.diogonunes.jcolor.Ansi.colorize;
+import static com.diogonunes.jcolor.Attribute.*;
 
 /**
  * Helper methods for doing console-based user interaction
@@ -50,14 +50,14 @@ public class Console {
             var input = scanner.nextLine().trim();
 
             if ( input.length() != 3 ) {
-                System.out.println(helpMessage);
+                System.out.println(colorize(helpMessage, YELLOW_TEXT()));
                 continue;
             }
 
             var parts = input.split(" ");
 
             if ( parts.length != 2 ) {
-                System.out.println(helpMessage);
+                System.out.println(colorize(helpMessage, YELLOW_TEXT()));
                 continue;
             }
 
@@ -67,13 +67,13 @@ public class Console {
                 var pos = new Position(Row.from(parts[0]), Col.from(parts[1]));
 
                 if (board.isOccupiedAt(pos)) {
-                    System.out.println("That position is already taken.");
+                    System.out.println(colorize("That position is already taken.", RED_TEXT(), BOLD()));
                     continue;
                 }
 
                 return pos;
             } catch ( IllegalArgumentException e ) {
-                System.out.println(helpMessage);
+                System.out.println(colorize(helpMessage, YELLOW_TEXT()));
             }
         }
     }
