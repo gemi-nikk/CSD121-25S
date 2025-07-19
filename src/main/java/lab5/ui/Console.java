@@ -1,8 +1,8 @@
-package tictactoe.ui;
+package lab5.ui;
 
 import com.diogonunes.jcolor.AnsiFormat;
-import tictactoe.game.*;
-import tictactoe.players.*;
+import lab5.game.*;
+import lab5.players.*;
 
 import java.util.Scanner;
 
@@ -55,8 +55,9 @@ public class Console {
                 switch ( input ) {
                     // E.g.
                     // case "randy" -> { return new Randy(); }
-                    default -> printAlert("TODO: Implement computer players");
-                }
+                    case "randy" -> { return new RandyPlayer("Randy"); }
+                    case "circe" -> { return new CircePlayer("Circe"); }
+                    default -> printAlert("Unknown player type: " + input);                }
             } else {
                 return new Player(input);
             }
